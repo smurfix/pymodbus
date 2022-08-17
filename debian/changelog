@@ -1,0 +1,5 @@
+pymodbus (3.0.0~dev5-1) smurf; urgency=low
+
+  * source package automatically created by stdeb 0.10.0
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Wed, 17 Aug 2022 10:01:29 +0200

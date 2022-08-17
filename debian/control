@@ -1,0 +1,33 @@
+Source: pymodbus
+Maintainer: Matthias Urlichs <matthias@urlichs.de>
+Section: python
+Priority: optional
+Build-Depends: dh-python, python3-setuptools, python3-all, debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/riptideio/pymodbus/
+
+Package: python3-pymodbus
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: A fully featured modbus protocol stack in python
+ ================================
+ PyModbus - A Python Modbus Stack
+ ================================
+ .
+ .. image:: https://github.com/riptideio/pymodbus/actions/workflows/ci.yml/badge.svg?branch=dev
+    :target: https://github.com/riptideio/pymodbus/actions/workflows/ci.yml
+ .. image:: https://badges.gitter.im/Join%20Chat.svg
+    :target: https://gitter.im/pymodbus_dev/Lobby
+ .. image:: https://readthedocs.org/projects/pymodbus/badge/?version=latest
+    :target: https://pymodbus.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+ .. image:: https://pepy.tech/badge/pymodbus
+    :target: https://pepy.tech/project/pymodbus
+    :alt: Downloads
+ .
+ ------------------------------------------------------------
+ Supported versions
+ ------------------------------------------------------------
+ .
+ Version `2.5.3 <https://github.com/riptideio/pymodbus/releases/tag/v2.5.3>`_ is the last 2.x release (Supports python 2.7.x - 3.7).
+
