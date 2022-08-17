@@ -1,35 +1,32 @@
-pymodbus\.client package
-========================
+pymodbus\.client
+================
 
-.. automodule:: pymodbus.client
-    :members:
-    :undoc-members:
-    :show-inheritance:
+Pymodbus offers clients with different transport protocols in 2 versions:
 
-Subpackages
------------
+- synchronous,
+- asynchronous (based on asyncio).
+
+Using a client to set/get information from a device (server) is simple as seen in this
+example (more details in below)::
+
+    # create client object
+    client = ModbusSerial("/dev/tty")
+
+    # connect to device
+    client.start()
+
+    # set/set information
+    client.read_coils(0x01)
+    client.write_coil(0x01, values)
+    ...
+
+    # disconnect device
+    client.stop()
 
 .. toctree::
 
-    pymodbus.client.asynchronous
+    pymodbus.client.setup
 
-Submodules
-----------
+.. toctree::
 
-pymodbus\.client\.common module
--------------------------------
-
-.. automodule:: pymodbus.client.common
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-pymodbus\.client\.sync module
------------------------------
-
-.. automodule:: pymodbus.client.sync
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-
+    pymodbus.client.calls
