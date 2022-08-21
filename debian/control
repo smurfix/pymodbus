@@ -1,0 +1,19 @@
+Source: pymodbus
+Maintainer: Matthias Urlichs <matthias@urlichs.de>
+Section: python
+Priority: optional
+Build-Depends: dh-python, python3-setuptools, python3-all, debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/riptideio/pymodbus/
+
+Package: python3-pymodbus
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: A fully featured modbus protocol stack in python
+ .
+         Pymodbus aims to be a fully implemented modbus protocol stack
+         implemented using twisted/asyncio/tornado.
+         Its orignal goal was to allow simulation of thousands of modbus devices
+         on a single machine for monitoring software testing.
+ .
+
